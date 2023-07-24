@@ -1,0 +1,104 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="sill.css">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered');
+        })
+        .catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    });
+  }
+</script>
+<link rel="manifest" href="/manifest.json">
+<script src="service-worker.js"></script>
+<link rel="apple-touch-icon" href="chan55.jpg">
+    <title>Сайт про автомобили 'CHANGAN'</title>
+</head>
+<body>
+    <!-- Заголовок сайта -->
+    <h1>ВЕЛКИЙ КИТАЙ ПРОШЛОГО В АВТОМОБИЛЯХ НАСТОЯЩЕГО</h1>
+
+    <!-- Меню навигации -->
+    <nav>
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#cars">Автомобили</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Содержимое страницы -->
+
+    <!-- Секция "Главная" -->
+    <section id="home">
+        <h2>ГЛАВНАЯ</h2>
+        <p>Здесь вы найдете информацию о различных моделях автомобилей 'CHANGAN', их характеристиках и многое другое.</p>
+    </section>
+
+    <!-- Секция "О нас" -->
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы команда автомобильных энтузиастов, которые собрались, чтобы поделиться своими знаниями и интересами в мире китайских автомобилей.</p>
+    </section>
+
+    <!-- Секция "Автомобили" -->
+    <section id="cars">
+        <h2>Автомобили</h2>
+        <p>Здесь представлены различные модели автомобилей с Китая. Вы можете узнать об их характеристиках, мощности и многом другом.</p>
+        <!-- Можно добавить таблицу с характеристиками автомобилей -->
+        
+        <table>
+            <tr>
+                <th>Марка</th>
+                <th>Модель</th>
+                <th>Мощность</th>
+				<th>Фото</th>
+            </tr>
+            <tr>
+                <td>CHANGAN</td>
+                <td>CS 55 PLUS</td>
+                <td>198 л.с.</td>
+				<td class="car-image"><img src="chan55.jpg"></td>
+            </tr>
+            <tr>
+                <td>CHANGAN</td>
+                <td>CS 75 FL</td>
+                <td>150 л.с.</td>
+				<td class="car-image"><img src="chan75.jpg"></td>
+            </tr>
+        </table>
+        -->
+    </section>
+
+    <!-- Секция "Контакты" -->
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами, если у вас есть вопросы или предложения!</p>
+        <!-- Можно добавить форму для отправки сообщения -->
+        <form action="mailto:info@example.com" method="post" enctype="text/plain">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2023 Сайт про автомобили</p>
+    </footer>
+
+</body>
+</html>

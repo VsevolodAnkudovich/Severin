@@ -1,0 +1,19 @@
+{
+  "name": "Сайт про автомобили 'CHANGAN'",
+  "short_name": "CHANGAN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff0000",
+  "icons":[
+    {
+      "src":"chan55.jpg",
+      "sizes":"192x192"
+    },
+    {
+      "src":"chan75.jpg", // Исправлено: указано правильное имя файла изображения
+      "sizes":"512x512", // Исправлено: указаны правильные размеры изображения
+      type: 'image/jpg' // Добавлено: указан тип файла изображения
+    }
+   ]
+}
