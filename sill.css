@@ -1,97 +1,90 @@
 /* Общие стили */
+/*
 body {
   background-image: url('photjpg.jpg');
   background-size: cover;
   background-position: center;
-  font-size: 18px; /* Размер шрифта */
-  font-family: Arial, sans-serif; /* Шрифт */
+  font-size: 18px; 
+  font-family: Arial, sans-serif; 
 
 }
 
 h1, h2 {
-  color: #333; /* Цвет заголовков */
+  color: #333; 
 }
 
 p {
-  line-height: 1.5; /* Межстрочный интервал */
+  line-height: 1.5; 
 }
+*/
 
 /* Стили для таблицы */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
+    width:100%;
+    border-collapse : collapse ;
+    margin-bottom :20px ;
 }
 
-th, td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+th, td{
+    padding :10px ;
+    text-align:left ;  
+     border-bottom:solid #ddd ;
+   }
+
+th{
+   background-color:#f9f9f9 ; /* Цвет фона заголовков */
 }
 
-th {
-  background-color: #f9f9f9; /* Цвет фона заголовков */
-}
 
-.car-image img {
-  max-width: 100%;
-  height: auto;
-}
+.car-image img{   
+   max-width :100% ;     
+   height:auto ;      
+}   
 
-/* Стили для меню навигации */
-nav {
-  background-color: #333; /* Цвет фона меню */
+/* Стили для меню навигации */    
+nav{
+      background-color:#333;/* Цвет фона меню*/
 }
+nav ul{
+       list-style-type:none;
+       margin :0;
+       padding :0;}
+nav ul li {display:inline-block;}  
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  display: block;
-  color: #fff; /* Цвет ссылок */
-  text-decoration: none;
-  padding: 10px 20px;
-}
-
-nav ul li a:hover {
-  background-color: #555; /* Цвет фона при наведении */
-}
+nav ul li a { display:block;color:#fff;text-decoration:none;padding:
+             }
+             
+ nav ul li a:hover{background-color:#555;}
 
 /* Стили для контактной формы */
-form {
-  margin-top: 20px;
-}
 
-label {
-  display: block;
-  margin-bottom: 5px;
-}
+form{margin-top :20px;}                 
+label{display:block;margin-bottom :
+         input[type="text"], input[type="email"],
+          textarea {
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+            width ::100% ;
+
+            padding::10px;
+
+            margin-bottom::10px ;
+
+            border:1px solid #ccc ;
+
+            border-radius::4px ;  
+          }
 
 input[type="submit"] {
-  background-color: #333; /* Цвет фона кнопки */
-  color: #fff; /* Цвет текста кнопки */
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
 
-input[type="submit"]:hover {
-  background-color: #555; /* Цвет фона при наведении на кнопку */
-}
+              background-color :#333; 
+
+              color:#fff;
+
+              border:none;
+
+              padding:10px 20px ; 
+
+             cursor:pointer;}
+
+input[type="submit"]:hover{background-color :
+                              #555;}
