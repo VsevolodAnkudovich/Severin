@@ -6,7 +6,7 @@ self.addEventListener('install', event => {
 	    '/',
         '/photjpg.jpg',
 		'/site.html',
-        '/sill.css',
+        '/style.css',
         '/chan55.jpg',
         '/chan75.jpg'
       ]);
