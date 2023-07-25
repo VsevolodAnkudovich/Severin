@@ -3,22 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="style.css">
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(registration => {
-          console.log('Service Worker registered');
-        })
-        .catch(error => {
-          console.log('Service Worker registration failed:', error);
-        });
-    });
-  }
-</script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 <link rel="manifest" href="/manifest.json">
-<script src="service-worker.js"></script>
 <link rel="apple-touch-icon" href="chan55.jpg">
     <title>Сайт про автомобили 'CHANGAN'</title>
 </head>
@@ -99,6 +86,19 @@
     <footer>
         <p>&copy; 2023 Сайт про автомобили</p>
     </footer>
-
+	<script src="service-worker.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered');
+        })
+        .catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    });
+  }
+</script>
 </body>
 </html>
