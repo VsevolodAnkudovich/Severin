@@ -13,7 +13,7 @@
     {
       "src":"chan75.jpg", 
       "sizes":"512x512", 
-      type: 'image/jpg'
+      "type": "image/jpg"
     }
    ]
 }
